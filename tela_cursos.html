@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- FUNÇÃ0 PARA ABRIR A TELA EXPECIFICA -->
+  <script>
+  // Função para abrir a aba ao clicar em uma div
+  function abrirAba() {
+    window.open('formulairo.html');
+  }
 
+  // Seleciona todas as divs
+  const divs = document.querySelectorAll('div');
+
+  // Adiciona o manipulador de eventos a cada div
+  divs.forEach(div => {
+    div.addEventListener('click', abrirAba);
+  });
+</script>
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- FUNÇÃO DO POP UP FIXADO -->
+<script>
+  window.onscroll = function() { // Função é chamada quando a página é rolada
+    var footer = document.getElementById("footer");
+    var body = document.body,
+        html = document.documentElement;
+
+    var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                           html.clientHeight, html.scrollHeight, html.offsetHeight );
+                           
+    if ((window.innerHeight + window.scrollY) >= height) { // Se a página estiver no final
+      footer.style.display = "block"; // Mostra o rodapé
+    } else {
+      footer.style.display = "none"; // Oculta o rodapé
+    }
+  };
+</script>
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- HEAD -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="css/cursos.css" />
+  <title>Cursos</title>
+  <link rel="stylesheet" href="CSS/cursos.css" />
 </head>
-
-<body>
-  <div class="container">
-    <a href="tela_login.php"><img src="images/logo.png" alt="Logo da faculdade" /></a>
-    <div class="title">
-      <h1>ACADEMIA DE DESENVOLVIMENTO E LIDERANÇA VITORIOSA - GO</h1>
-    </div>
-  </div>
-
-  <main>
-    <div class="body-content">
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- BODY -->
+  <body>
+<!-- -------------------------------------------------------- -->
+<!-- CABEÇALHO -->
+    <div class="container">
+      <a href="tela_home.html"><img src="images/logo.png" alt="Logo da faculdade" /></a>
       <div class="title">
-        <h2>Cursos Disponiveis</h2>
+        <h1>ACADEMIA DE DESENVOLVIMENTO E LIDERANÇA VITORIOSA - GO</h1>
       </div>
+    </div>
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- TITULO E INFORMATIVO CURSOS -->
+<main>
+  <div class="body-content">
+    <div class="title">
+      <h2>Cursos Disponiveis</h2>
+    </div>
 
-      <div class="content-cards">
-        
-        <div class="card-curso">
-          <h2>Engenharia de Software</h2>
-          <img src="images/eng-software.png" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Direito</h2>
-          <img src="images/direito.jpeg" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Educação Física</h2>
-          <img src="images/edf.jpeg" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Psicologia</h2>
-          <img src="images/psicologia.jpeg" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Análise e Desenvolvimento de Sistemas</h2>
-          <img src="images/ads.jpeg" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Engenharia Mecânica</h2>
-          <img src="images/mecanica.jpeg" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Administração</h2>
-          <img src="images/eng-software.png" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Gestão Empresarial</h2>
-          <img src="images/eng-software.png" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Ecnomia</h2>
-          <img src="images/eng-software.png" alt="eng-software-imagem">
-        </div>
+      <div class="card-curso" onclick="abrirAba()">
+        <img src="images/eng-software.png" alt="eng-software-imagem">
+        <h2>Engenharia de Software</h2>
       </div>
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- RODAPÉ -->
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- --> 
+
   </main>
 </body>
-
 </html>
