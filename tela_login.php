@@ -15,9 +15,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($tipo == 'Admin') {
             header("Location: tela_gestor.php");
         } elseif ($tipo == 'Professor') {
-            header("Location: tela_professor.php");
+            header("Location: Professor.php");
         } elseif ($tipo == 'Aluno') {
-            header("Location: tela_cursos.html");
+            header("Location: Aluno.php");
         }
         exit();
     } else {
