@@ -1,0 +1,169 @@
+<!-- Este é o arquivo HTML para o informativo do curso de graduação -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- -------------------------------------------------------- -->
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Psicologia</title>
+    <link rel="stylesheet" href="../CSS/informativo.css">
+</head>
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- CORPO -->
+<body>
+
+<!-- POP UP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close-button" onclick="closePopup()">X</span>
+    <h2>Formulário de Inscrição</h2>
+    <form id="registrationForm" action="inscricao.php" method="post">
+      <label for="nome">Nome Completo:</label><br>
+      <input type="text" id="nome" name="nome" required><br>
+
+      <label for="data_nascimento">Data de Nascimento:</label><br>
+      <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="telefone">Telefone:</label><br>
+      <input type="tel" id="telefone" name="telefone" required><br><br>
+
+      <input type="submit" value="Inscreva-se">
+    </form>
+  </div>
+</div>
+<!-- CABEÇALHO -->
+<div class="container">
+  <a href="../tela_login.php"><img src="../images/logo.png" alt="Logo da faculdade" /></a>
+  <div class="title">
+    <h1>ACADEMIA DE DESENVOLVIMENTO E LIDERANÇA VITORIOSA - GO</h1>
+  </div>
+</div>
+<!-- -------------------------------------------------------- -->
+<!-- TITULO -->
+<main>
+<div class="text-curso">
+    <div class="title">
+      <h2>Engenharia de Software</h2>
+    </div>
+</div> 
+<!-- Aqui é onde o conteúdo começa -->
+
+<!-- CARD CURSO -->
+<div class="container2">
+    <div class="card-curso">
+      <img src="../images/piiii.png" alt="Descrição da imagem" />
+      
+</div>
+
+<!-- QUADRADO BRANCO -->
+<div class="white-square">
+  <button class="btn" onclick="openPopup()">Quero me Inscrever</button>
+  <div class="horario">
+    <h2><img src="../images/ampulheta.png"> Carga Horária <span>4000h</span></h2>
+    <h2><img src="../images/calendario.png"> Tempo de curso <span>5 anos</span></h2>
+    <h2><img src="../images/modalidade.png"> Modalidade <span>Presencial</span></h2>
+  </div>
+  <div class="quadrado-pequeno">
+    <h2>Mensalidade</h2>
+    <h3>R$ 2.087,50</h3>
+  </div>
+</div>
+
+<!-- FORMULARIO -->
+  <div id="popup" class="popup">
+      <button class="close-btn" onclick="closePopup()">X</button>
+      <p>FORMULARIO DE INCRIÇÃO DO CURSO</p>
+      </div>
+      <div id="overlay" class="overlay" onclick="closePopup()"></div>
+</div>
+
+<div class="black-square" style="height: 536px;">
+  <h2>Matérias</h2>
+  <h3> - Fisiologia Humana</h3>
+  <h3> - Neuroanatomina e Neurofisiologia </h3>
+  <h3> - Neuropsicologia</h3> 
+  <h3> - Desenvolvimento Humano Adulto e Velhice</h3> 
+  <h3> - Teorias da Psicanálise</h3> 
+  <h3> - Psicologia Escolar e Educacional</h3> 
+  <h3> - Psicologia Social</h3> 
+  <h3> - Psicologia Analítica</h3> 
+  <h3> - Psicologia do Trabalho</h3> 
+  <h3> - Psicologia Corporal</h3>
+  <h3> - Psicologia da Saúde e Hospitalar</h3> 
+  <h3> - Clínica Infantil</h3> 
+</div>
+
+<!-- INFORMAÇÕES -->
+<div style="border-bottom: 1.5px solid #bebebe; width: 690px; margin-top: 30px; margin-left: 400px;"></div>
+
+<div class="container2" style="display: flex; align-items: center;">
+  <div class="two-square">
+      <div class="infos">
+        <h2>Perfil profissional</h2>
+        <h3>Realizar diagnósticos e intervenções clínicos e institucionais utilizando ferramentas e técnicas psicológicas, efetivar diagnósticos e desenvolver projetos de intervenções no campo de saúde pública, trabalhar com a promoção e, em especial, com a prevenção em saúde, atuar e intervir de acordo com os princípios da ética profissional, estar atualizado e manter-se em formação continuada, exercer a profissão de forma proativa, empreendedora, com visão sistêmica e comprometida com a realidade psicossocial, possuir capacidade analítica-crítica e propositiva.</h3>
+    </div>
+  </div>
+</div>
+
+  <div class="two-square">
+      <div class="infos">
+        <h2>Mercado de Trabalho</h2>
+        <h3>As principais Áreas de Atuação do psicólogo são: Psicologia clínica, saúde, hospitalar, organizacional, do trabalho e institucional, escolar e educacional, jurídica, forense e judiciária, trânsito, esporte, (etc). Assim, os locais mais comuns para trabalhar são: Clínicas de saúde, Escolas, Empresas, Hospital geral, Hospital psiquiátrico, CAPS, UBS (Unidades básicas de saúde), Residências terapêuticas, </h3>
+    </div>
+  </div>
+</div>
+<div class="container-footer">
+  <div class="footer-content">
+      <p>&copy; 2024 GRUPO ADVLG. Todos os direitos reservados.</p>
+      <p>Entre em contato: unibrasil@unibrasil.com</p>
+      <p>Telefone:(41)3515-1448</p>
+  </div>
+</div>
+
+</main>
+
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- FUNÇÃO DO POP UP -->
+<script>
+  // Função para abrir o pop-up
+  function openPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+
+  // Função para fechar o pop-up
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    // Resetar o formulário após fechar o pop-up
+    document.getElementById("registrationForm").reset();
+  }
+
+  // Função para enviar o formulário
+  function submitForm() {
+    // Exibir mensagem de confirmação
+    document.getElementById("confirmationMessage").style.display = "block";
+    // Fechar o pop-up após 2 segundos
+    setTimeout(function() {
+      closePopup();
+      // Ocultar mensagem de confirmação
+      document.getElementById("confirmationMessage").style.display = "none";
+    }, 2000);
+  }
+</script>
+<!-- RODAPÉ -->
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+
+</body>
+</html>
+<!-- </div2> -->
+<!-- BOTÃO DE INSCRIÇÃO -->
+<!-- <button type="button" onclick="openPopup()">Inscrever</button>
+</div2>
+<div style="clear: both;"></div> -->

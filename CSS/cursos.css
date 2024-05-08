@@ -5,13 +5,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* -------------CORPO DA TELA------------- */
 body {
-  background-image: url("../images/fundo.jpg");
   background-size: cover;
   background-position: center top 33%;
   font-family: "Poppins", sans-serif;
 }
+/* --------------------------------------- */
+
+/* ---------------CABEÇALHO---------------- */
 .container {
   background-color: #0b396e;
   display: flex;
@@ -31,54 +33,119 @@ h1 {
   text-align: right;
   color: white;
 }
-.body-content {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  background: white;
-  width: 85%;
-  height: 170%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-.body-content h2 {
-    margin-top: 30px;
-    font-size: 50px;
-}
+/* --------------------------------------- */
 
-main {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    height: 80vh;
+/* -------------TITULO CURSOS------------- */
+.title {
+  display: flex; /* Ativa o flexbox */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+.text-curso {
+  font-size: 20px;
+  padding: 10px;
+  margin: 15px;
+  display: flex; /* Ativa o flexbox */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  margin-left: 200px;
+}
+.course-image {
+  width: 70px; /* Largura da imagem */
+  height: 70px; /* Altura da imagem */
+  margin-right: 20px; /* Espaçamento à direita para separar a imagem do título */
+}
+/* --------------------------------------- */
+
+/* -------------CARD CURSO---------------- */
+.card-container {
+  display: flex;
+  align-items: center;
+  margin-left: 220px;
+  margin-right: 230px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card-curso {
-    width: 30%;
-    height: 300px;
-    border-radius: 15px;
-    background-color: #0b396e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-basis: calc(25% - 5px);
+  max-width: calc(25% - 10px); /* Define uma largura máxima para garantir que haja no máximo três elementos por linha */
+  height: 340px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  border: 1px solid rgb(228, 228, 228); 
+  margin-bottom: 80px; /* Margem inferior para espaçamento entre as linhas */
 }
-.card-curso h2 {
-    font-size: 18px;
-    text-align: center;
-    color: white;
+
+.card-curso:hover {
+  background-color: #f1f1f1; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); 
 }
+
 .card-curso img {
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-curso h2 {
+  font-size: 23px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  margin: 10px; 
+}
+
+.card-curso h3 {
+  font-size: 15px;
+  text-align: left;
+  color: rgb(0, 0, 0);
   margin: 10px;
-  width: 90%;
-  height: 70%;
-  border-radius: 10px;
+  margin-top: 20px;
 }
-.content-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    gap: 40px;
-    width: 100%;
+/* --------------------------------------- */
+
+/* -----------BOTÃO PRESENCIAL------------ */
+.green-button {
+  background-color: rgb(216, 116, 3);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+
 }
+
+/* --------------------------------------- */
+
+/* -----------------RODAPÉ---------------- */
+footer {
+  background-color: #0b396e; 
+  color: white; 
+  padding: 20px 0;
+  text-align: center; 
+}
+
+.footer-content {
+  margin: 0 auto;
+  color: #ffffff;
+  margin: 10px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  margin-left: 700px;
+  background-color: #0b396e; 
+}
+.container-footer {
+  background-color: #0b396e;
+  display: flex;
+  width: 100%;
+  height: 15%;
+  align-items: center;
+}
+
+/* --------------------------------------- */

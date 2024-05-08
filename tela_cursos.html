@@ -1,75 +1,114 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="css/cursos.css" />
+  <title>Cursos</title>
+  <link rel="stylesheet" href="CSS/cursos.css" />
 </head>
-
 <body>
-  <div class="container">
-    <a href="tela_login.php"><img src="images/logo.png" alt="Logo da faculdade" /></a>
+
+  <header class="header">
+    <div class="container">
+      <a href="tela_login.php">
+        <img src="images/logo.png" alt="Logo da faculdade" />
+      </a>
+      <div class="title">
+        <h1>ACADEMIA DE DESENVOLVIMENTO E LIDERANÇA VITORIOSA - GO</h1>
+      </div>
+    </div>
+  </header>
+<main>
+  <!-- CABEÇALHO -->
+  <div class="text-curso">
     <div class="title">
-      <h1>ACADEMIA DE DESENVOLVIMENTO E LIDERANÇA VITORIOSA - GO</h1>
+        <img src="images/capelo.png" alt="images" class="course-image">
+        <h2>Cursos Disponíveis:</h2>
     </div>
   </div>
-
-  <main>
-    <div class="body-content">
-      <div class="title">
-        <h2>Cursos Disponiveis</h2>
+<!-- CURSO ENGENHARIA -->
+<div class="card-container">
+  <div class="card-curso">
+    <img src="images/eng-software.png" alt="eng-software-imagem">
+    <h2>Engenharia de Software</h2>
+    <h3>Modalidade Disponível:</h3>
+    <button class="green-button" data-arquivo="cursos/eng_soft.html">Presencial</button>
+  </div>
+<!-- CURSO ADS -->
+  <div class="card-curso">
+    <img src="images/ads.jpg" alt="admin-imagem">
+    <h2>Analise e Desenvolvimento</h2>
+    <h3>Modalidade Disponível:</h3>
+    <button class="green-button" data-arquivo="cursos/ads.html">Presencial</button>
+  </div>
+<!-- CURSO ADMINISTRAÇÃO-->
+    <div class="card-curso">
+      <img src="images/admin.jpg" alt="admin-imagem">
+      <h2>Administração</h2>
+      <h3>Modalidade Disponível:</h3>
+      <button class="green-button" data-arquivo="cursos/admin.html">Presencial</button>
+    </div>
+<!-- CURSO PSICOLOGIA -->
+    <div class="card-curso">
+      <img src="images/piiii.png" alt="psicologia-imagem">
+      <h2>Piscologia</h2>
+      <h3>Modalidade Disponível:</h3>
+      <button class="green-button" data-arquivo="cursos/psico.html">Presencial</button>
+    </div>
+  </div>
+<!-- CURSO BIOMEDICINA -->
+  <div class="card-container">
+    <div class="card-curso">
+      <img src="images/bio.png" alt="biomed-imagem">
+      <h2>Biomedicina</h2>
+      <h3>Modalidade Disponível:</h3>
+      <button class="green-button" data-arquivo="cursos/biomed.html">Presencial</button>
+    </div>
+<!-- CURSO DIREITO -->
+    <div class="card-curso">
+      <img src="images/direito.png" alt="direito-imagem">
+      <h2>Direito</h2>
+      <h3>Modalidade Disponível:</h3>
+      <button class="green-button" data-arquivo="cursos/direito.html">Presencial</button>
+    </div>
+<!-- CURSO ED FISICA -->
+      <div class="card-curso">
+        <img src="images/edf.png" alt="edf-imagem">
+        <h2>Educação Fisica</h2>
+        <h3>Modalidade Disponível:</h3>
+        <button class="green-button" data-arquivo="cursos/edf.html">Presencial</button>
       </div>
-
-      <div class="content-cards">
-        
-        <div class="card-curso">
-          <h2>Engenharia de Software</h2>
-          <img src="images/eng-software.png" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Direito</h2>
-          <img src="images/direito.jpeg" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Educação Física</h2>
-          <img src="images/edf.jpeg" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Psicologia</h2>
-          <img src="images/psicologia.jpeg" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Análise e Desenvolvimento de Sistemas</h2>
-          <img src="images/ads.jpeg" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Engenharia Mecânica</h2>
-          <img src="images/mecanica.jpeg" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Administração</h2>
-          <img src="images/eng-software.png" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Gestão Empresarial</h2>
-          <img src="images/eng-software.png" alt="eng-software-imagem">
-        </div>
-
-        <div class="card-curso">
-          <h2>Ecnomia</h2>
-          <img src="images/eng-software.png" alt="eng-software-imagem">
-        </div>
+<!-- CURSO FISIOTERAPIA -->
+      <div class="card-curso">
+        <img src="images/fisio.png" alt="Fisioterapia-image">
+        <h2>Fisioterapia</h2>
+        <h3>Modalidade Disponível:</h3>
+        <button class="green-button" data-arquivo="cursos/fisio.html">Presencial</button>
       </div>
-  </main>
+    </div>  
+  <div class="container-footer">
+    <div class="footer-content">
+        <p>&copy; 2024 GRUPO ADVLG. Todos os direitos reservados.</p>
+        <p>Entre em contato: unibrasil@unibrasil.com</p>
+        <p>Telefone:(41)3515-1448</p>
+    </div>
+  </div>
+<script>
+  // Função para abrir o arquivo correspondente ao clicar no botão verde
+  function abrirAba(event) {
+    const arquivo = event.target.dataset.arquivo;
+    window.open(arquivo);
+  }
+
+  // Seleciona todos os botões verdes pelo seletor de classe
+  const greenButtons = document.querySelectorAll('.green-button');
+
+  // Adiciona o manipulador de eventos a todos os botões verdes
+  greenButtons.forEach(button => {
+    button.addEventListener('click', abrirAba);
+  });
+</script>
+  <!-- -------------------------------------------------------- -->
 </body>
-
 </html>

@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         // Redirecionar com base no tipo de usuário
         if ($tipo == 'Admin') {
-            header("Location: tela_admin.php");
+            header("Location: tela_gestor.php");
         } elseif ($tipo == 'Professor') {
             header("Location: tela_professor.php");
         } elseif ($tipo == 'Aluno') {
@@ -32,11 +32,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
     <div class="container">
-        <img src="images/logo.png" alt="Logo da faculdade">
+        <a href="tela_home.html"><img src="images/logo.png" alt="Logo da faculdade"></a>
         <div class="title">
             <h1>ACADEMIA DE DESENVOLVIMENTO E LIDERANÇA VITORIOSA - GO</h1>    
         </div>
