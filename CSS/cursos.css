@@ -5,14 +5,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* -------------CORPO DA TELA------------- */
 body {
-  background-image: url("../images/fundo.jpg");
   background-size: cover;
   background-position: center top 33%;
   font-family: "Poppins", sans-serif;
 }
+/* --------------------------------------- */
 
+/* ---------------CABEÇALHO---------------- */
 .container {
   background-color: #0b396e;
   display: flex;
@@ -32,53 +33,57 @@ h1 {
   text-align: right;
   color: white;
 }
+/* --------------------------------------- */
 
-.body-content {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  background: white;
-  width: 85%;
-  height: 170%;
+/* -------------TITULO CURSOS------------- */
+.title {
+  display: flex; /* Ativa o flexbox */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+.text-curso {
+  font-size: 20px;
+  padding: 10px;
+  margin: 15px;
+  display: flex; /* Ativa o flexbox */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  margin-left: 200px;
+}
+.course-image {
+  width: 70px; /* Largura da imagem */
+  height: 70px; /* Altura da imagem */
+  margin-right: 20px; /* Espaçamento à direita para separar a imagem do título */
+}
+/* --------------------------------------- */
+
+/* -------------CARD CURSO---------------- */
+.card-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  border-radius: 10px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-.body-content h2 {
-    margin-top: 30px;
-    font-size: 50px;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    height: 80vh;
+  margin-left: 220px;
+  margin-right: 230px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card-curso {
-  width: 30%;
-  height: 350px;
+  flex-basis: calc(25% - 5px);
+  max-width: calc(25% - 10px); /* Define uma largura máxima para garantir que haja no máximo três elementos por linha */
+  height: 340px;
   border-radius: 15px;
   background-color: #ffffff;
-  flex-direction: column;
-  align-items: left;
   transition: background-color 0.3s ease;
   border: 1px solid rgb(228, 228, 228); 
-  margin: 20px; 
+  margin-bottom: 80px; /* Margem inferior para espaçamento entre as linhas */
 }
 
 .card-curso:hover {
-  background-color: #f1f1f1; /* Alterando a cor de fundo ao passar o mouse sobre a div */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra ao passar o mouse */
+  background-color: #f1f1f1; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); 
 }
 
 .card-curso img {
-  margin: px;
   width: 100%;
-  height: 70%;
+  height: 50%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-top-left-radius: 10px;
@@ -89,38 +94,58 @@ main {
   font-size: 23px;
   text-align: left;
   color: rgb(0, 0, 0);
-  margin: 22px; 
+  margin: 10px; 
 }
 
-.content-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    gap: 40px;
-    width: 100%;
-}
-
-footer {
-  background-color: #052549;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  width: 100%; 
-  position: fixed;
-  bottom: 0;
-}
-#footer {
+.card-curso h3 {
+  font-size: 15px;
   text-align: left;
-  padding: 20px 40px; 
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  margin-top: 20px;
+}
+/* --------------------------------------- */
+
+/* -----------BOTÃO PRESENCIAL------------ */
+.green-button {
+  background-color: rgb(216, 116, 3);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+
 }
 
-#footer p {
-  display: inline;
-  margin: 20;
+/* --------------------------------------- */
+
+/* -----------------RODAPÉ---------------- */
+footer {
+  background-color: #0b396e; 
+  color: white; 
+  padding: 20px 0;
+  text-align: center; 
 }
 
-#footer a {
-  float: right;
-  margin-top: 5px; 
+.footer-content {
+  margin: 0 auto;
+  color: #ffffff;
+  margin: 10px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  margin-left: 700px;
+  background-color: #0b396e; 
+}
+.container-footer {
+  background-color: #0b396e;
+  display: flex;
+  width: 100%;
+  height: 15%;
+  align-items: center;
 }
 
+/* --------------------------------------- */
