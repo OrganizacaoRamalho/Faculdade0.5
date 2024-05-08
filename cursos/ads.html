@@ -1,0 +1,169 @@
+<!-- Este é o arquivo HTML para o informativo do curso de graduação -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- -------------------------------------------------------- -->
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Analise e Desenvolvimento</title>
+    <link rel="stylesheet" href="../CSS/informativo.css">
+</head>
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- CORPO -->
+<body>
+
+<!-- POP UP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close-button" onclick="closePopup()">X</span>
+    <h2>Formulário de Inscrição</h2>
+    <form id="registrationForm" action="inscricao.php" method="post">
+      <label for="nome">Nome Completo:</label><br>
+      <input type="text" id="nome" name="nome" required><br>
+
+      <label for="data_nascimento">Data de Nascimento:</label><br>
+      <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="telefone">Telefone:</label><br>
+      <input type="tel" id="telefone" name="telefone" required><br><br>
+
+      <input type="submit" value="Inscreva-se">
+    </form>
+  </div>
+</div>
+<!-- CABEÇALHO -->
+<div class="container">
+  <a href="../tela_login.php"><img src="../images/logo.png" alt="Logo da faculdade" /></a>
+  <div class="title">
+    <h1>ACADEMIA DE DESENVOLVIMENTO E LIDERANÇA VITORIOSA - GO</h1>
+  </div>
+</div>
+<!-- -------------------------------------------------------- -->
+<!-- TITULO -->
+<main>
+<div class="text-curso">
+    <div class="title">
+      <h2>Analise e Desenvolvimento</h2>
+    </div>
+</div> 
+<!-- Aqui é onde o conteúdo começa -->
+
+<!-- CARD CURSO -->
+<div class="container2">
+    <div class="card-curso">
+      <img src="../images/ads.jpg" alt="Descrição da imagem" />
+      
+</div>
+
+<!-- QUADRADO BRANCO -->
+<div class="white-square">
+  <button class="btn" onclick="openPopup()">Quero me Inscrever</button>
+  <div class="horario">
+    <h2><img src="../images/ampulheta.png"> Carga Horária <span>2000h</span></h2>
+    <h2><img src="../images/calendario.png"> Tempo de curso <span>2 anos</span></h2>
+    <h2><img src="../images/modalidade.png"> Modalidade <span>Presencial</span></h2>
+  </div>
+  <div class="quadrado-pequeno">
+    <h2>Mensalidade</h2>
+    <h3>R$ 1.100,00</h3>
+  </div>
+</div>
+
+<!-- FORMULARIO -->
+  <div id="popup" class="popup">
+      <button class="close-btn" onclick="closePopup()">X</button>
+      <p>FORMULARIO DE INCRIÇÃO DO CURSO</p>
+      </div>
+      <div id="overlay" class="overlay" onclick="closePopup()"></div>
+</div>
+
+<div class="black-square" style="height: 557px;">
+  <h2>Matérias</h2>
+  <h3> - Aplicações para Internet</h3>
+  <h3> - Arquitetura de Computadores</h3>
+  <h3> - Big Data</h3>
+  <h3> - Direito Cibernético</h3>
+  <h3> - Empreendedorismo</h3>
+  <h3> - Fundamentos de Redes de Computadores</h3>
+  <h3> - Introdução à Programação em C#</h3>
+  <h3> - Introdução à Segurança da Informação</h3>
+  <h3> - Matemática Aplicada</h3>
+  <h3> - Matemática e Lógica</h3>
+  <h3> - Modelagem de Dados</h3>
+  <h3> - Segurança Cibernética</h3> 
+</div>
+
+<!-- INFORMAÇÕES -->
+<div style="border-bottom: 1.5px solid #bebebe; width: 690px; margin-top: 30px; margin-left: 400px;"></div>
+
+<div class="container2" style="display: flex; align-items: center;">
+  <div class="two-square">
+      <div class="infos">
+        <h2>Perfil profissional</h2>
+        <h3>Ao se formar em Análise e Desenvolvimento de Sistemas, o profissional poderá ser responsável por analisar, projetar, desenvolver, testar, implantar e manter sistemas computacionais de informação. Além disso, avaliar, selecionar, especificar e utilizar metodologias e ferramentas da engenharia de software, linguagens de programação e bancos de dados. Poderá também atuar coordenando equipes de produção de softwares, realizando vistorias, perícias, emitindo laudos e parecer técnico em sua área de formação.</h3>
+    </div>
+  </div>
+</div>
+
+  <div class="two-square">
+      <div class="infos">
+        <h2>Mercado de Trabalho</h2>
+        <h3>O profissional poderá atuar em empresas de planejamento, desenvolvimento de projetos, assistência técnica e consultoria. Além disso, empresas de tecnologia, departamento de tecnologia da informação de empresas em geral, como: indústria, comércio e serviços, órgãos públicos, organizações não governamentais, institutos e centros de pesquisa. Também possuirá conhecimento técnico para desenvolver seu espírito empreendedor abrindo seu próprio negócio na área de TI.</h3>
+    </div>
+  </div>
+</div>
+<div class="container-footer">
+  <div class="footer-content">
+      <p>&copy; 2024 GRUPO ADVLG. Todos os direitos reservados.</p>
+      <p>Entre em contato: unibrasil@unibrasil.com</p>
+      <p>Telefone:(41)3515-1448</p>
+  </div>
+</div>
+
+</main>
+
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+<!-- FUNÇÃO DO POP UP -->
+<script>
+  // Função para abrir o pop-up
+  function openPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+
+  // Função para fechar o pop-up
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    // Resetar o formulário após fechar o pop-up
+    document.getElementById("registrationForm").reset();
+  }
+
+  // Função para enviar o formulário
+  function submitForm() {
+    // Exibir mensagem de confirmação
+    document.getElementById("confirmationMessage").style.display = "block";
+    // Fechar o pop-up após 2 segundos
+    setTimeout(function() {
+      closePopup();
+      // Ocultar mensagem de confirmação
+      document.getElementById("confirmationMessage").style.display = "none";
+    }, 2000);
+  }
+</script>
+<!-- RODAPÉ -->
+<!-- -------------------------------------------------------- -->
+<!-- -------------------------------------------------------- -->
+
+</body>
+</html>
+<!-- </div2> -->
+<!-- BOTÃO DE INSCRIÇÃO -->
+<!-- <button type="button" onclick="openPopup()">Inscrever</button>
+</div2>
+<div style="clear: both;"></div> -->
