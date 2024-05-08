@@ -64,7 +64,7 @@ if(isset($_GET['search']) && trim($_GET['search']) != '') {
       <div>
       <div class="search-container">
       <a href="<?php echo $_SERVER['PHP_SELF']; ?>" class="show-all">Mostrar Todos</a>
-        <div class="img-add"><img src="images/adicionar.png" ></div>
+        <div class="img-add" id="openModal"><img src="images/adicionar.png" ></div>
         <form action="tela_gestor.php" method="get">
             <input type="text" placeholder="Buscar..." name="search">
             <button type="submit">Pesquisar</button>
@@ -106,6 +106,82 @@ if(isset($_GET['search']) && trim($_GET['search']) != '') {
             </table>
     </div>
   </main>
+
+  <?php
+include('config.php');
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $matricula = $_POST['matricula'];
+    $nome = $_POST['nome'];
+    $curso = $_POST['curso'];
+    $contato = $_POST['contato'];
+    $data_vencimento = $_POST['data_vencimento'];
+    $status_pagamento = $_POST['status_pagamento'];
+
+    $stmt = $mysqli->prepare("INSERT INTO usuarios (matricula, nome, curso, contato, data_vencimento, status_pagamento) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $matricula, $nome, $curso, $contato, $data_vencimento, $status_pagamento);
+    $stmt->execute();
+
+    if($stmt->affected_rows > 0){
+        echo "Usuário adicionado com sucesso!";
+    } else {
+        echo "Erro ao adicionar usuário.";
+    }
+
+    $stmt->close();
+    $mysqli->close();
+}
+?>
+
+
+
+
+  <!-- Modal -->
+<div id="modalForm" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Adicionar Novo Usuário</h2>
+    <form action="" method="post">
+      <input type="text" name="matricula" placeholder="Matricula Completo" required>
+        <input type="text" name="nome" placeholder="Nome Completo" required>
+        <input type="text" name="curso" placeholder="Curso" required>
+        <input type="text" name="contato" placeholder="Contato" required>
+        <input type="date" name="data_vencimento" placeholder="Data de Vencimento" required>
+        <input type="text" name="status_pagamento" placeholder="Status do Pagamento" required>
+        <button type="submit">Adicionar</button>
+    </form>
+  </div>
+</div>
 </body>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('modalForm');
+
+// Get the button that opens the modal
+var btn = document.getElementById('openModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName('close')[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 
 </html>
