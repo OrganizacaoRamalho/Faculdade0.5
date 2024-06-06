@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* -------------CORPO DA TELA------------- */
+body {
+  background-size: cover;
+  background-position: center top 33%;
+  font-family: "Poppins", sans-serif;
+}
+/* --------------------------------------- */
+/* ---------------CABEÇALHO---------------- */
+.container img{
+  width: 100px;
+  height: 100px;
+}
+
+.container2 {
+  display: flex;
+}
+
+.container {
+  background-color: #0b396e;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  z-index: 999;
+}
+
+.logo-title {
+  display: flex; 
+  align-items: center; 
+}
+
+.title {
+  margin-left: 10px; 
+  margin-bottom: 10px;
+  color: white;
+  padding-top: 5px;
+  padding-left: 5px;
+  text-align: left;
+}
+
+.links {
+  margin-left: 115px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin-right:35px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+/* --------------------------------------- */
+/* -------------TITULO CURSOS------------- */
+.title-text {
+  display: flex; /* Ativa o flexbox */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  margin-top: 250px;
+}
+.text-curso {
+  font-size: 30px;
+  margin: 30px;
+  display: flex; /* Ativa o flexbox */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  margin-left: 20%;
+  
+}
+
+/* --------------------------------------- */
+/* -------------CARD CURSO---------------- */
+.card-curso {
+  margin-right: 6%;
+  margin-left: 20%;
+  width: 690px;
+  height: auto;
+  overflow: hidden;
+}
+
+.card-curso img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.card-curso:hover img {
+  transform: scale(1.1);
+}
+/* --------------------------------------- */
+/* ---------------INCRIÇÃO---------------- */
+
+.white-square {
+  width: 18%; 
+  max-height: 39%; 
+  background-color: #ffffff;
+  margin-right: 15%;
+  float: right;
+  box-shadow: 0px 0px 10px rgba(149, 141, 223, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgb(228, 228, 228); 
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: center;
+
+}
+/* MENSALIDADE */
+.quadrado-pequeno {
+  margin: auto;
+  width: 66%;
+  height: 24%;
+  background-color: #d8e4f0;
+  border-radius: 5px;
+}
+.quadrado-pequeno h2{
+  margin-top: 10%;
+  font-size: 90%;
+  text-align: center;
+  color: #4a6580;
+  white-space: nowrap;
+}
+.quadrado-pequeno h3{
+  margin-top: 14px;
+  font-size: 15px;
+  text-align: center;
+  color: #4a6580;
+  white-space: nowrap;
+}
+/* MENSALIDADE */
+
+.btn {
+  width: 70%;
+  height: 60px;
+  background-color: rgb(226, 123, 4);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  transition: transform 0.5s ease;
+}
+.btn:hover{
+  background-color: rgb(189, 104, 7);
+}
+
+.horario img {
+  width: 8%;
+  height: 10%;
+  vertical-align: bottom;
+  margin: 2px;
+  margin-top: 14px;
+}
+.horario h2 span{
+  font-size: 17px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.horario h2 {
+  font-size: 19px;
+  margin: 2px;
+  margin-left: 10px;
+}
+/* --------------------------------------- */
+.square{
+  align-items: center;
+  width: 90%; 
+  max-height: 100%; 
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.black-square {
+  width: 18%; 
+  max-height: auto;
+  background-color: #ffffff; 
+  float: right;
+  margin-right: 15%;
+  box-shadow: 0px 0px 10px rgba(149, 141, 223, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgb(228, 228, 228); 
+  display: flex;
+  padding: 1%;
+  flex-direction: column;
+  margin-top: 3%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.black-square h2{
+  font-size: 25px;
+  color: #0b396e;
+
+}
+.black-square h3{
+  font-size: 19px;
+  margin-top: 4%;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/* --------------------------------------- */
+/* --------------INFORMAÇÕES-------------- */
+.two-square {
+  background-color: #ffffff; 
+  box-shadow: 0px 0px 10px rgba(149, 141, 223, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgb(228, 228, 228); 
+  display: flex;
+  padding: 2%;
+  margin-top: 5%;
+  max-width: 59%;
+  max-height: auto;
+  margin-left: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.three-square {
+  background-color: #ffffff; 
+  box-shadow: 0px 0px 10px rgba(149, 141, 223, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgb(228, 228, 228); 
+  display: flex;
+  padding: 1%;
+  margin-top: 30px;
+  max-width: 40%;
+  max-height: auto;
+  margin-left: 20%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.two-square h2{
+  font-size: 20px;
+  white-space: nowrap;
+}
+.three-square h2{
+  font-size: 20px;
+  white-space: nowrap;
+}
+ .infos h2{
+  font-size: 22px;
+  color: #0b396e;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+ .infos h3{
+  font-size: 19px;
+  margin-top: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* --------------------------------------- */
+/* ----------------POP UP----------------- */
+
+
+.popup-content input[type="text"],
+.popup-content input[type="date"],
+.popup-content input[type="email"],
+.popup-content input[type="tel"] {
+  width: 90%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto; 
+  display: block;
+  margin-top: 5px;
+}
+
+.popup-content input[type="submit"] {
+  background-color: rgb(216, 116, 3);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 auto; 
+  display: block;
+}
+.popup-content h2{
+  font-size: 35px;
+  margin-left: 23px;
+  margin-bottom: 10px;
+}
+
+.popup-content input[type="submit"]:hover {
+  background-color: rgb(189, 104, 7);
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 700%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 600px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(149, 141, 223, 0.4);
+  font-size: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #999;
+}
+.popup label {
+  width: 200px;
+}
+/* --------------------------------------- */
+/* --------------- FONTE ----------------- */
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+/* --------------------------------------- */
+/* ------------- FOOTER ------------------ */
+footer {
+  background-color: #0b396e; 
+  color: white; 
+  padding: 20px 0;
+  text-align: center; 
+  align-items: center;
+}
+
+.footer-content {
+  margin: 0 auto;
+  color: #ffffff;
+  margin: 10px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  margin-left: 700px;
+  background-color: #0b396e; 
+}
+.container-footer {
+  background-color: #0b396e;
+  display: flex;
+  width: 100%;
+  height: 15%;
+  align-items: center;
+  margin-top: 60px;
+}
+footer {
+  background-color: #0b396e;
+  color: white;
+  padding: 20px 0;
+  text-align: center; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  /* CABEÇALHO E LINKS */
+  .container {
+    width: 100%;
+    height: 17%;
+  }
+  .container img {
+      width: 60px;
+      height: 60px;
+  }
+  .container h1{
+      font-size: 10px;
+      margin-top: 0px;
+  }
+  .title {
+      margin-left: 5px; 
+      margin-bottom: 0px;
+  }
+  .links {
+      margin-left: 70px;
+      font-size: 10px;
+  }
+
+  .black-square{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 6px;
+  }
+  .two-square{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 6px;
+  }
+  .three-square {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 6px;
+  }
+
+  .title h1 {
+    font-size: 11px;
+  }
+
+  .title h1 {
+    padding-left: 5px;
+  }
+
+  /* ------------- CONTEINER ------------- */
+  /* CABEÇALHO E LINKS */
+  .container {
+    width: 100%;
+    height: 17%;
+  }
+  .container img {
+      width: 60px;
+      height: 60px;
+  }
+  .container h1{
+      font-size: 10px;
+      margin-top: 0px;
+  }
+  .title {
+      margin-left: 5px; 
+      margin-bottom: 0px;
+  }
+  .links {
+      margin-left: 70px;
+      font-size: 10px;
+  }
+  
+  /* -------------TITULO CURSOS------------- */
+  .title-text{
+    margin-top: 130px;
+  }
+  .text-curso {
+    font-size: 15px;
+    margin-left: 4%;
+    margin-top: 0;
+  }
+
+  /* -------------CARD CURSO---------------- */
+  .card-curso {
+    margin-left: 4%;
+    width: 300px;
+    margin-right: 1%;
+  }
+  .card-curso img {
+    width: 80%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  /* ---------------INCRIÇÃO---------------- */
+  .white-square{
+    width: 130px;
+    height: 140px;
+    margin-right: 4%;
+    padding: 5px;
+    border-radius: 6px;
+  }
+  .btn {
+    width: 60px;
+    height: 20px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    font-size: 6px;
+    border-radius: 3px;
+    padding: 4px;
+  }
+  /* -------------- */
+  .horario img {
+    width: 8%;
+    height: 8%;
+    vertical-align: bottom;
+    margin: 1px;
+    margin-top: 10px;
+  }
+  .horario h2 {
+    font-size: 7px;
+    margin: 2px;
+    margin-left: 5px;
+    margin-top: 1px;
+  }
+  .horario h2 span{
+    font-size: 7px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 1px;
+  }
+  /* -------------- */
+  .quadrado-pequeno {
+    width: 50%;
+    height: 24%;
+    border-radius: 3px;
+  }
+  .quadrado-pequeno h2{
+    margin-top: 2%;
+    font-size: 30%;
+  }
+  .quadrado-pequeno h3{
+    margin-top: 2%;
+    font-size: 6px;
+
+  }
+
+  /* ----------------MATERIAS------------------ */
+  .black-square {
+    width: 28%; 
+    height: 350px;
+    margin-right: 4%;
+  }
+  .black-square h2{
+    font-size: 12px;
+  }
+  .black-square h3{
+    font-size: 10px;
+    margin-top: 7%;
+  }
+
+  /* --------------INFORMAÇÕES-------------- */
+  .two-square {
+    margin-top: 5%;
+    max-width: 120%;
+    max-height: 150%;
+    margin-left: 4%;
+  }
+  .infos h3{
+    font-size: 10px;
+    margin-top: 5px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .two-square h2{
+    font-size: 12px;
+  }
+  .three-square {
+  display: flex;
+  padding: 1%;
+  margin-top: 15px;
+  max-width: 55%;
+  max-height: 70%;
+  margin-left: 4%;
+  }
+  .three-square h2{
+    font-size: 12px;
+
+  }
+
+  /* ----------------POP UP----------------- */
+  .popup-content input[type="text"],
+  .popup-content input[type="date"],
+  .popup-content input[type="email"],
+  .popup-content input[type="tel"] {
+    width: 80%; 
+    padding: 2px;
+  }
+  .popup-content input[type="submit"] {
+    padding: 10px 22px;
+    font-size: 10px;
+  }
+  .popup-content h2{
+    font-size: 16px;
+    margin-left: 4%;
+    margin-bottom: 5px;
+  }
+  .popup {
+    width: 200%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    width: 240px;
+    height: 350px;
+    font-size: 10px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #999;
+  }
+  .popup label {
+    width: 200px;
+  }
+  /* ------------- FOOTER ------------------ */
+
+  .footer-content {
+    margin: 10px;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 8px;
+    margin-left: 100px;
+    background-color: #0b396e; 
+  }
+
+}

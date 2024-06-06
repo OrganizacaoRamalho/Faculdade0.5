@@ -1,0 +1,176 @@
+body {
+    background-color: #7896b1;
+    background-size: cover;
+    background-position: center top 33%;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.container {
+    background-color: #0b396e;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    z-index: 999;
+}
+
+.logo-title {
+    display: flex; 
+    align-items: center; 
+}
+
+.title {
+    margin-left: 10px; 
+    margin-bottom: 10px;
+}
+
+.links {
+    margin-left: 115px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-right:35px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.container img {
+    width: 100px; 
+    height: 100px;
+}
+
+.title h1 {
+    padding-top: 1px; 
+    padding-left: 5px;
+    text-align: right;
+    color: white; 
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajuste conforme necessário */
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    color: #0b396e;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #0b396e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #064b7a;
+}
+
+.container-busca {
+    display: block;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-busca form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-busca h2 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 60px; /* Adicionando margem inferior para separar o título */
+}
+
+.container-busca label {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.container-busca input[type="text"] {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 20px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.container-busca input[type="submit"] {
+    background-color: #007bff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-busca input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.container-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Defina a largura do container como desejar */
+    margin: 0 auto; /* Isso centralizará o container na tela */
+    margin-top: 200px; /* Adiciona um espaço superior */
+    text-align: center; /* Centraliza o conteúdo dentro do container */
+}
+
+.container-info form {
+    display: inline-block; /* Permite que o formulário fique em linha */
+    text-align: left; /* Alinha o texto à esquerda dentro do formulário */
+}
